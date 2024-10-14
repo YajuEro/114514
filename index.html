@@ -11,7 +11,7 @@
         }
         .header {
             text-align: center;
-            font-size: 500%;
+            font-size: 500%; /* Welcomeのサイズ */
             margin-top: 10%;
             width: 100%;
         }
@@ -23,39 +23,47 @@
         .char6 { color: indigo; } /* m */
         .char7 { color: violet; } /* e */
         .subtext {
-            font-size: 150%; /* あ星ね.comのフォントサイズを少し小さく */
+            font-size: 300%; /* あ星ね.comのフォントサイズを大きく */
+            text-align: center; /* 中央揃え */
+            margin-top: 20px; /* 上部の余白 */
         }
         .sidebar {
-            float: left; /* 左寄せ */
-            width: 30%; /* 幅 */
+            width: 80%; /* 幅を調整 */
             border: 2px solid black; /* 枠線 */
-            padding: 10px; /* 内側の余白 */
+            padding: 20px; /* 内側の余白を増やす */
             background-color: #fff; /* 背景色 */
-            margin-top: 20%; /* 上からの距離 */
+            margin: 20px auto; /* 中央寄せ */
         }
         .greeting {
-            font-size: 120%; /* あいさつのフォントサイズ */
+            font-size: 200%; /* あいさつのフォントサイズを大きく */
+            text-align: center; /* 中央揃え */
         }
         .quote {
-            font-size: 100%; /* 引用のフォントサイズ */
+            font-size: 150%; /* 引用のフォントサイズを少し大きく */
+            margin-top: 20px; /* 上部の余白 */
+            text-align: center; /* 中央揃え */
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <h1 class="header">
         <span class="char1">w</span>
         <span class="char2">e</span>
         <span class="char3">l</span>
         <span class="char4">c</span>
         <span class="char5">o</span>
         <span class="char6">m</span>
-        <span class="char7">e</span><br>
-        <span class="subtext">あ星ね.com</span>
-    </div>
+        <span class="char7">e</span>
+    </h1>
+    <h2 class="subtext">あ星ね.com</h2>
 
-    <div class="sidebar">
-        <div class="greeting">あ星ね界隈会長あいさつ</div>
-        <div class="quote">あ星ねって最強よな</div>
-    </div>
+    <table class="sidebar" width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+            <td align="center">
+                <p class="greeting">あ星ね界隈会長あいさつ <a href="https://x.com/Link_2011A" target="_blank">@Link.2011</a></p>
+                <p class="quote">あ星ねって最強よな(</p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
