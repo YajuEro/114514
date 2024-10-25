@@ -11,6 +11,9 @@
             color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .header {
             text-align: center;
@@ -60,11 +63,24 @@
         a:hover {
             background-color: #87ceeb;
         }
+        .counter {
+            font-size: 1.5rem;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header class="header">Welcome</header>
     <h2 class="subtext">あ星ね.com</h2>
+
+    <div class="counter">
+        カウンター: 1234
+    </div>
 
     <div class="sidebar">
         <p class="greeting">
