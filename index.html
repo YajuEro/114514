@@ -1,72 +1,67 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <title>あ星ね.com</title> <!-- サイトの名前を変更 -->
-    <style type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あ星ね.com</title>
+    <style>
         body {
-            background-color: #ccffcc; /* 薄めの黄緑色 */
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f3f4f6, #e1e5ea);
+            font-family: 'Arial', sans-serif;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         .header {
             text-align: center;
-            font-size: 500%; /* Welcomeのサイズ */
-            margin-top: 10%;
-            width: 100%;
+            font-size: 4rem;
+            margin-top: 5%;
+            color: #4a90e2;
         }
-        .char1 { color: red; }    /* w */
-        .char2 { color: orange; } /* e */
-        .char3 { color: yellow; } /* l */
-        .char4 { color: green; }  /* c */
-        .char5 { color: blue; }   /* o */
-        .char6 { color: indigo; } /* m */
-        .char7 { color: violet; } /* e */
         .subtext {
-            font-size: 400%; /* あ星ね.comのフォントサイズをさらに大きく */
-            text-align: center; /* 中央揃え */
-            margin-top: 20px; /* 上部の余白 */
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 10px 0 40px;
+            color: #4a4a4a;
         }
         .sidebar {
-            width: 80%; /* 幅を調整 */
-            border: 2px solid black; /* 枠線 */
-            padding: 20px; /* 内側の余白を増やす */
-            background-color: yellow; /* 背景色を黄色に変更 */
-            margin: 20px auto; /* 中央寄せ */
+            width: 90%;
+            max-width: 600px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
         }
         .greeting {
-            font-size: 200%; /* あいさつのフォントサイズを大きく */
-            text-align: center; /* 中央揃え */
+            font-size: 1.5rem;
+            color: #333;
         }
         .quote {
-            font-size: 150%; /* 引用のフォントサイズを少し大きく */
-            margin-top: 20px; /* 上部の余白 */
-            text-align: center; /* 中央揃え */
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 15px;
         }
         a {
-            text-decoration: none; /* 下線を削除 */
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1 class="header">
-        <span class="char1">w</span>
-        <span class="char2">e</span>
-        <span class="char3">l</span>
-        <span class="char4">c</span>
-        <span class="char5">o</span>
-        <span class="char6">m</span>
-        <span class="char7">e</span>
-    </h1>
+    <header class="header">Welcome</header>
     <h2 class="subtext">あ星ね.com</h2>
 
-    <table class="sidebar" width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
-        <tr>
-            <td align="center">
-                <p class="greeting">あ星ね界隈会長あいさつ <a href="https://x.com/Link_2011A" target="_blank">@Link.2011</a></p>
-                <p class="quote">あ星ねって最強よな( </p>
-            </td>
-        </tr>
-    </table>
+    <div class="sidebar">
+        <p class="greeting">
+            あ星ね界隈会長あいさつ 
+            <a href="https://x.com/Link_2011A" target="_blank">@Link.2011</a>
+        </p>
+        <p class="quote">あ星ねって最強よな(</p>
+    </div>
 </body>
 </html>
