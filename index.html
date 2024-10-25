@@ -78,8 +78,8 @@
     <header class="header">Welcome</header>
     <h2 class="subtext">あ星ね.com</h2>
 
-    <div class="counter">
-        カウンター: 1234
+    <div class="counter" id="counter">
+        カウンター: 00000000
     </div>
 
     <div class="sidebar">
@@ -89,5 +89,20 @@
         </p>
         <p class="quote">あ星ねって最強よな(</p>
     </div>
+
+    <script>
+        // カウンターの初期化または取得
+        let count = localStorage.getItem('pageCount');
+        if (!count) {
+            count = 0;
+        }
+
+        // カウンターを1つ増加させて保存
+        count++;
+        localStorage.setItem('pageCount', count);
+
+        // 8桁でカウンターを表示
+        document.getElementById('counter').innerText = 'カウンター: ' + String(count).padStart(8, '0');
+    </script>
 </body>
 </html>
